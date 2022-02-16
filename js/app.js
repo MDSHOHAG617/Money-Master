@@ -19,15 +19,9 @@ document.getElementById('calculate-tbn').addEventListener('click', function () {
     //balance
     const balance = document.getElementById('balance');
     balance.innerText = incomeCost - expencess;
-
-
-
-
 })
 
-
-
-//savings
+//savings with parsentage
 document.getElementById('save-btn').addEventListener('click', function () {
     console.log(' clicked')
     //parcentage
@@ -38,8 +32,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const incomeCost = parseFloat(incomeInput.value);
     const savingAmount = document.getElementById('saving-amount');
     savingAmount.innerText = incomeCost * (parcentageNum / 100);
-    const lastSavings = incomeCost * (parcentageNum / 100);
-    // console.log(parcentageNum)
+    /////////////////////////they are from above coz function nai :D ////////////////////////
     const foodInput = document.getElementById('food');
     const foodCost = parseFloat(foodInput.value);
     // rent cost
@@ -50,11 +43,17 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const clothesCost = parseFloat(clothesInput.value);
     //Total Expenses 
     const expencess = (foodCost + rentCost + clothesCost)
-
     const balance = document.getElementById('balance');
     balance.innerText = incomeCost - expencess;
-    const lastBalance = incomeCost - expencess;
+    /////////////////////////they are from above coz function nai :D ////////////////////////
+
     const remainigAmount = document.getElementById('remaining-balance');
-    remainigAmount.innerText = lastBalance - lastSavings;
+    remainigAmount.innerText = (incomeCost - expencess) - (incomeCost * (parcentageNum / 100));
 
 })
+
+
+
+
+
+

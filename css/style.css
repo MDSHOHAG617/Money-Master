@@ -19,6 +19,7 @@ input{
     margin-left: 10px;
     background-color: rgb(248, 234, 234);
     border: none;
+    border-radius: 2px;
 }
 .save input{
 width: 80px;
@@ -54,7 +55,7 @@ button{
     margin-bottom: -10px;
     font-family: sans-serif;
 }
-.h3s1{
+.text-style{
     margin-left: 60px;
     margin-bottom: -10px;
     font-family: sans-serif;
@@ -86,4 +87,42 @@ img{
 }
 .income-percent input{
     width: 80px;
+}
+
+
+/* responsive for mobile only */
+@media (max-width:480px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 20px;
+        
+        
+       
+    }
+    .main{
+        display: block;
+    }
+    .left-sec{
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: center;
+    }
+    .left-sec img{
+        width: 238px;
+        height: 200px;
+    }
+    .right-sec{
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 90%;
+        justify-content: center;
+        margin-right: 50px;
+        position: absolute;
+        left: 40px;
+    }
 }
