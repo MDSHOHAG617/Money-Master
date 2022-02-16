@@ -12,13 +12,17 @@ h3{
     font-family: sans-serif;
 }
 p{
-    margin-left: 5px;
+    margin-right: -45px;
 }
 input{
     height: 30px;
     margin-left: 10px;
     background-color: rgb(248, 234, 234);
     border: none;
+}
+.save input{
+width: 80px;
+margin-right: 10px;
 }
 button{
     background-color: rgb(24, 140, 207);
@@ -30,24 +34,32 @@ button{
     color: white;
     font-weight: 800;
 }
-.income-percent button{
+.btn-save button{
     position: relative;
-    width: 120px;
-    left: -50px;
+    left: 140px;
 }
+
 .main{
     display: flex;
 }
 
 .left-sec{
-    width: 75%;
+    width: 70%;
 }
 .right-sec{
-    width:0%;
+    width:30%;
 }
 .h3s{
     margin-left: 80px;
     margin-bottom: -10px;
+    font-family: sans-serif;
+}
+.h3s1{
+    margin-left: 60px;
+    margin-bottom: -10px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 img{
