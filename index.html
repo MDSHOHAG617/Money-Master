@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
     <!-- header -->
     <header>
@@ -17,51 +18,53 @@
 
     <!-- main -->
     <main class="main">
-        <!-- left section -->
         <div class="left-sec">
-            <img src="money.main.jpg" alt="">
+            <img src="money.main.jpg" alt="" />
         </div>
-        <!-- right section -->
+
         <div class="right-sec">
-            <h2 class="h3-texts">Income</h2>
+            <h2 class="h3s">Income</h2>
             <div class="income">
                 <h4>Income:</h4>
-                <input id="income" type="text">
+                <input id="income" value="00" type="number" />
             </div>
 
-            <h3 class="h3-texts">Expenses</h3>
+            <h3 class="h3s">Expenses</h3>
             <div class="income income-sm">
                 <h4>Food:</h4>
-                <input id="food" type="text">
+                <input id="food" value="00" type="number" />
             </div>
-            <div class=" income income-sm">
+            <div class="income income-sm">
                 <h4>Rent:</h4>
-                <input id="rent" type="text">
+                <input id="rent" value="00" type="number" />
             </div>
             <div class="income">
                 <h4>Clothes:</h4>
-                <input id="clothes" type="text">
+                <input id="clothes" value="00" type="number" />
             </div>
+
+            <p style="color: red" id="error"></p>
 
             <button id="calculate-tbn">Calculate</button>
 
-
-            <h4 class="text-style">Total Expenses: <span id="total-expns">00</span></h4>
-            <h4 class="text-style">Balance: <span id="balance">00</span></h4>
+            <h4 class="h3s1">Total Expenses: <span id="total-expns">00</span></h4>
+            <h4 class="h3s1">Balance: <span id="balance">00</span></h4>
 
             <div class="income income-sm save">
                 <h4>Save:</h4>
-                <input id="savings-perscent" type="text">
+                <input id="savings-perscent" value="00" type="number" />
 
                 <p>%</p>
 
                 <button id="save-btn" class="btn-save">Save</button>
             </div>
 
+            <p style="color: red" id="error-save"></p>
 
-            <h4 class="text-style">Saving Amount: <span id="saving-amount">00</span></h4>
-            <h4 class="text-style">Remaining Balance: <span id="remaining-balance">00</span></h4>
-
+            <h4 class="h3s1">Saving Amount: <span id="saving-amount">00</span></h4>
+            <h4 class="h3s1">
+                Remaining Balance: <span id="remaining-balance">00</span>
+            </h4>
         </div>
     </main>
 
