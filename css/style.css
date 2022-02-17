@@ -101,30 +101,30 @@ img{
     h1{
         font-size: 20px;
         
-        
-       
     }
     .main{
         display: block;
     }
     .left-sec{
-        margin: 0;
-        padding: 0;
-        display: block;
-        justify-content: center;
+        width: 90%;
+        /* margin: 0;
+        padding: 0; */
+        /* display: block; */
+        /* justify-content: center; */
     }
     .left-sec img{
+        
         width: 238px;
         height: 200px;
     }
     .right-sec{
         margin: 0;
         padding: 0;
-        display: block;
-        width: 90%;
-        justify-content: center;
-        margin-right: 50px;
-        position: absolute;
-        left: 40px;
+        /* display: block; */
+        width: 60%;
+        /* justify-content: center; */
+        /* margin-right: 50px; */
+        position: relative;
+        left:80px;
     }
 };
