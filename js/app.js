@@ -149,6 +149,11 @@ document.getElementById('save-btn').addEventListener('click', function () {
         const balance = document.getElementById('balance');
         balance.innerText = incomeCost - expencess;
 
+        if ((incomeCost * (parcentageNum / 100)) > (incomeCost - expencess)) {
+            alert("savings canot be bigger than balance")
+        }
+
+
         const remainigAmount = document.getElementById('remaining-balance');
         remainigAmount.innerText = (incomeCost - expencess) - (incomeCost * (parcentageNum / 100));
 
