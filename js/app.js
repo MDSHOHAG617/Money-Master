@@ -57,18 +57,11 @@
 
 
 
-
-
-
-
-// Mahim ///////////////////////////////////
+////////////////mahim////////////////////////
 
 function expencessCount() {
     // food cost
     const foodCost = parseFloat(document.getElementById('food').value);
-    if (foodCost < 0) {
-        alert("Enter a valid number")
-    }
     // rent cost
     const rentCost = parseFloat(document.getElementById('rent').value);
     // clothes cost
@@ -89,7 +82,16 @@ document.getElementById('calculate-tbn').addEventListener('click', function () {
     // Error
     const error = document.getElementById('error');
 
-    if (expencess > incomeCost) {
+    const foodCost = parseFloat(document.getElementById('food').value);
+    // rent cost
+    const rentCost = parseFloat(document.getElementById('rent').value);
+    // clothes cost
+    const clothesCost = parseFloat(document.getElementById('clothes').value);
+    if (foodCost < 0 || rentCost < 0 || clothesCost < 0) {
+        error.innerText = "please enter a valid";
+
+    }
+    else if (expencess > incomeCost) {
         // Error
         error.innerText = "Expencess is bigger than Income.";
     }
@@ -155,5 +157,9 @@ document.getElementById('save-btn').addEventListener('click', function () {
     }
 
 })
+
+
+
+
 
 
